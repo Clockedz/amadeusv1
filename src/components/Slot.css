@@ -1,0 +1,130 @@
+.slot{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: xx-large;
+    animation: fadeIn 1s linear;
+    animation-delay: 4s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    margin-top: 3.5%;
+}
+
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.roll--button{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 10px 45px;
+    border: #E9E9ED;
+    border-style: solid;
+    background-color: #1C1B22;
+    color: #E9E9ED;
+	transition-duration: 0.3s;
+    border-radius: 5px;
+    width: 120px;
+    position: fixed;
+    
+}
+
+.roll--button:hover{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    background-color:white ;
+    border-color:white;
+    color: #1C1B22;
+	transition-duration: 0.3s;
+    border-radius: 5px;
+    position: fixed;
+}
+
+.results{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 40%;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    font-family: 'Noto Sans', sans-serif;
+    animation: fadeIn 1s linear;
+    color: white;
+}
+
+.navbar span{
+    font-size: small;
+}
+
+.wallet{
+    border-radius: 4px;
+    color: white;
+    padding: 0px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    text-decoration: underline;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    position: fixed;
+    color: white;
+    text-decoration: underline;
+    font-size: small;
+    font-family: 'Noto Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.about-card{
+    padding: 5px 15px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.wallet-png{
+    height: 15px;
+    width: 15px;
+    padding-right: 5px;
+}
+
+.market{
+    padding: 5px 15px;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+}
+
+
+.alphabet{
+    font-size: large;
+}

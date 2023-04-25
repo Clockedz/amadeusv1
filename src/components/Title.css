@@ -1,0 +1,49 @@
+#title--animation #begone{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    stroke-dasharray: 1915.728271484375;
+    animation: noSVG 5s ease-in -3s;
+    animation-direction: reverse;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 5s, opacity 5s ease-in;
+    transition-delay: 2s;
+}
+
+
+
+@keyframes noSVG{
+    from{
+        stroke-dashoffset: 1915.728271484375;
+    }
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+
+#title--animation #logo{
+    position: absolute;   
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    stroke-dasharray: 1915.728271484375;
+    animation: 8s fillSVG ease-in-out;    
+}
+
+@keyframes fillSVG{
+    0%{
+        stroke-dashoffset: 1915.728271484375;
+    }
+    40%{
+        stroke-dashoffset:1057.864135742 ;
+    }
+    60%{
+        stroke-dashoffset: 400;
+    }
+    100%{
+        stroke-dashoffset: 0;
+    }
+}

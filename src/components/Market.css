@@ -1,0 +1,134 @@
+.market-page{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: small;
+}
+
+.market-page-open{
+    background-color: #1C1B22;
+    font-size: small;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+    height: 300px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.market-page img{
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    position: absolute;
+    margin-left: -18%;
+}
+
+.market-title{
+    display: flex;
+    text-decoration: underline;
+}
+
+.market-title:hover{
+    cursor: default;
+}
+
+.market-title-open{
+    display: flex;
+    float: right;
+    padding-right: 20px;
+    align-self: flex-end;
+    margin-top: auto;
+    text-decoration: underline;
+}
+
+
+#line-svg{
+    position: absolute;
+    top: 14%;
+    stroke-dasharray: 199.5;
+    animation: 1.2s SVGfill ease-in-out forwards;
+}
+
+
+@keyframes SVGfill {
+    0%{
+        stroke-dasharray: 399;
+        stroke-dashoffset: 399;
+    }
+    
+    30%{
+        stroke-dasharray: 399;
+        stroke-dashoffset: 399;
+    }
+    
+
+    100%{
+    stroke-dashoffset: 0;
+    }
+}
+
+.parent-div{
+    height: 300px;
+    width: 200px;
+}
+
+.searchbar{
+    width: 168px;
+    background-color: #2B2A33;
+    border-color: #2B2A33;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    color: white;
+    font-size: small;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: small;
+}
+
+.searchbar-img{
+    padding: 5px 4px;
+    width: 12px;
+    height: 12px;
+}
+
+.search{
+    opacity: 0;
+    position: absolute;
+    top:20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: row;
+    animation: fadeIn 1s linear 1.15s forwards;
+}
+
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+.market-values{
+    margin-top: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    overflow-y: scroll;
+    height: 200px;
+    opacity: 0;
+    animation: fadeIn 1s linear 1.15s forwards;
+    scrollbar-width: thin; 
+
+}

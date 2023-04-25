@@ -1,0 +1,35 @@
+.about--open{
+    width: 400px;
+    background-color: #1C1B22;
+    border-radius: 10px;
+    border-color: white;
+    border-width: 3px;
+    height: 210px;
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+    font-size: small;
+    padding-top: 5px;
+}
+
+.about{
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+    font-size: small;
+}
+
+.card{
+    bottom: 0;
+}
+
+.card p{
+    padding: 0px 20px;
+}
+
+.title{
+    text-decoration: underline;
+
+}
+
+.title:hover{
+    cursor: default;
+}
